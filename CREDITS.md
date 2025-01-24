@@ -24,7 +24,7 @@
     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     
 
-### Initial Core Structure from : [PGM](https://github.com/rahidmondal/pgm)
+### Initial Core Structure from : [Secure PGM](https://github.com/rahidmondal/pgm)
 
     MIT License
 
