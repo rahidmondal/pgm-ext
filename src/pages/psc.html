@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure PGM - Password Strength Checker</title>
+    <meta name="description"
+        content="Secure-PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/psc.css">
+    <script src="../scripts/zxcvbn.js" async></script>
+    <script src="../scripts/psc.js" async></script>
+</head>
+
+<body>
+    <div class="pattern"></div>
+
+    <div class="container">
+        <header>
+            <h1>Secure PGM </h1>
+        </header>
+        <main>
+            <h2>Password Strength Checker</h2>
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <div class="results">
+                <p>Password Summary</p>
+            </div>
+            <button><a href="pg.html">Password Generator</a></button>
+        </main>
+        <footer class="copyright">
+            <p>v0.0.1</p>
+        </footer>
+    </div>
+</body>
+
+</html>
