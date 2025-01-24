@@ -1,0 +1,92 @@
+:root {
+    --primary-bg-color: #f8f9fa;
+    --secondary-bg-color: #e5e5f7;
+    --container-bg-color: #e9dcff;
+    --primary-text-color: #343a40;
+    --secondary-text-color: #6c757d;
+    --border-color: #dee2e6;
+    --font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.pattern {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--secondary-bg-color);
+    opacity: 0.6;
+    background-image: radial-gradient(#770077 0.8px, var(--secondary-bg-color) 0.8px);
+    background-size: 16px 16px;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--container-bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-text-color);
+}
+
+h2 {
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.copyright {
+    text-align: center;
+    color: #130404;
+    font-size: 0.8em;
+    padding: 10px 0;
+    background-color: #e9f1f8;
+    border-radius: 0 0 10px 10px;
+}

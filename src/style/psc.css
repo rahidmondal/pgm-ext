@@ -1,0 +1,48 @@
+input[type="text"] {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#progressBarContainer {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#progressBar {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+#progressBar.very-weak {
+    width: 20%;
+    background: red;
+}
+
+#progressBar.weak {
+    width: 40%;
+    background: orange;
+}
+
+#progressBar.medium {
+    width: 60%;
+    background: yellow;
+    color: black;
+}
+
+#progressBar.strong {
+    width: 80%;
+    background: lightgreen;
+}
+
+#progressBar.very-strong {
+    width: 100%;
+    background: green;
+}

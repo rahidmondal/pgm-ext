@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <meta name="description"
+        content="Secure-PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
+
+
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/pg.css">
+    <script src="../scripts/pg.js" defer></script>
+</head>
+
+<body>
+    <div class="pattern"></div>
+    <div class="container">
+        <header>
+            <h1>Secure PGM</h1>
+        </header>
+
+        <main>
+
+            <h2>Generate a Strong Password</h2>
+            <div id="customAlertModal" class="modal">
+                <div class="modal-content">
+                    <p id="customAlertMessage"></p>
+                    <button id="customAlertButton">OK</button>
+                </div>
+            </div>
+
+            <div class="options">
+                <label for="upperCase">UpperCase
+                    <input type="checkbox" name="upperCase" id="upperCase">
+                </label>
+
+                <label for="lowerCase">LowerCase
+                    <input type="checkbox" name="lowerCase" id="lowerCase">
+                </label>
+
+                <label for="numbers">Numbers
+                    <input type="checkbox" name="numbers" id="numbers">
+                </label>
+
+                <label for="symbols">Symbols
+                    <input type="checkbox" name="symbols" id="symbols">
+                </label>
+
+                <label for="length">Length
+                    <input type="range" name="length" id="length" min="8" max="120" value="8">
+                    <span id="lengthValue">8</span>
+                </label>
+
+                <label for="allCheck">All Check
+                    <input type="checkbox" name="allCheck" id="allCheck">
+                </label>
+
+            </div>
+            <button id="generate">Generate</button>
+            <div id="result"></div>
+            <button id="copy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M16 1H4c-1.1 0-1.99.9-1.99 2L2 17h2V3h12V1zm3 4H8c-1.1 0-1.99.9-1.99 2L6 21c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                </svg>
+            </button>
+            <button><a href="psc.html">Password Strength Checker</a></button>
+        </main>
+
+        <footer class="copyright">
+            <p>v0.0.1</p>
+        </footer>
+    </div>
+</body>
+
+</html>
