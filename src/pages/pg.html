@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>SecOne PGM - Password Generator</title>
     <meta name="description"
-        content="Secure-PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
+        content="SecOne PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
 
 
     <link rel="stylesheet" href="../style/index.css">
@@ -15,63 +15,84 @@
 </head>
 
 <body>
-    <div class="pattern"></div>
     <div class="container">
         <header>
-            <h1>Secure PGM</h1>
+            <button id="returnButton">&larr;</button>
+            <h1>SecOne PGM </h1>
         </header>
 
-        <main>
+        <main class="generator-container">
+            <h2>Password Generator</h2>
+            <div class="result-container">
+                <div id="result" class="password-result"></div>
+                <button id="copy" class="copy-button" aria-label="Copy password">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                    </svg>
+                </button>
+            </div>
 
-            <h2>Generate a Strong Password</h2>
-            <div id="customAlertModal" class="modal">
-                <div class="modal-content">
-                    <p id="customAlertMessage"></p>
-                    <button id="customAlertButton">OK</button>
+            <div class="options-container">
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="upperCase">
+                        <span>Uppercase (A-Z)</span>
+                    </label>
                 </div>
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="lowerCase">
+                        <span>Lowercase (a-z)</span>
+                    </label>
+                </div>
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="numbers">
+                        <span>Numbers (0-9)</span>
+                    </label>
+                </div>
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="symbols">
+                        <span>Symbols (!@#$%^&*)</span>
+                    </label>
+                </div>
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="allCheck">
+                        <span>All Characters</span>
+                    </label>
+                </div>
+
+                <div class="length-container">
+                    <label for="length">Password Length: <span id="lengthValue">12</span></label>
+                    <input type="range" id="length" min="8" max="120" value="12">
+                </div>
+
+                <button id="generate" class="generate-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5l6.74-6.76z"/>
+                        <line x1="16" y1="8" x2="2" y2="22"/>
+                        <line x1="17.5" y1="15" x2="9" y2="15"/>
+                    </svg>
+                    Generate Password
+                </button>
             </div>
-
-            <div class="options">
-                <label for="upperCase">UpperCase
-                    <input type="checkbox" name="upperCase" id="upperCase">
-                </label>
-
-                <label for="lowerCase">LowerCase
-                    <input type="checkbox" name="lowerCase" id="lowerCase">
-                </label>
-
-                <label for="numbers">Numbers
-                    <input type="checkbox" name="numbers" id="numbers">
-                </label>
-
-                <label for="symbols">Symbols
-                    <input type="checkbox" name="symbols" id="symbols">
-                </label>
-
-                <label for="length">Length
-                    <input type="range" name="length" id="length" min="8" max="120" value="8">
-                    <span id="lengthValue">8</span>
-                </label>
-
-                <label for="allCheck">All Check
-                    <input type="checkbox" name="allCheck" id="allCheck">
-                </label>
-
-            </div>
-            <button id="generate">Generate</button>
-            <div id="result"></div>
-            <button id="copy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M16 1H4c-1.1 0-1.99.9-1.99 2L2 17h2V3h12V1zm3 4H8c-1.1 0-1.99.9-1.99 2L6 21c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
-                </svg>
-            </button>
-            <button><a href="psc.html">Password Strength Checker</a></button>
         </main>
 
-        <footer class="copyright">
-            <p>v0.0.2</p>
+        <div id="customAlertModal" class="modal">
+            <div class="modal-content">
+                <p id="customAlertMessage"></p>
+                <button id="customAlertButton">OK</button>
+            </div>
+        </div>
+        <footer class="app-footer">
+            <p class="version">v0.1.0</p>
         </footer>
     </div>
 </body>
