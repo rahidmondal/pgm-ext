@@ -41,3 +41,7 @@ passwordInput.addEventListener("input", function () {
     resultsDiv.appendChild(time);
     resultsDiv.appendChild(feedback);
 });
+
+document.getElementById('returnButton').addEventListener('click', function() {
+    window.location.href = '../index.html';
+});

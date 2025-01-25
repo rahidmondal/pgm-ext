@@ -99,6 +99,10 @@ async function generatePassword() {
 
 generateButton.addEventListener("click", generatePassword);
 
+document.getElementById('returnButton').addEventListener('click', function() {
+    window.location.href = '../index.html';
+});
+
 copyButton.addEventListener('click', function () {
 
     var password = document.getElementById('result').innerText;
@@ -127,4 +131,3 @@ copyButton.addEventListener('click', function () {
 
     }
 });
-

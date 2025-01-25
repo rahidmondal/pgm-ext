@@ -25,6 +25,23 @@ body {
     transform: translateY(-5px);
 }
 
+#returnButton {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+    padding: 0;
+  }
+  
+  #returnButton:hover {
+    color: var(--primary-color);
+  }
+
 header {
     text-align: center;
 }
@@ -38,33 +55,6 @@ h2 {
     margin-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
     text-align: center;
-}
-
-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.875rem;
-    border-radius: 0.75rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px var(--shadow-color);
-}
-
-button a {
-    color: white;
-    text-decoration: none;
 }
 
 footer {

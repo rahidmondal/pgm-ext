@@ -18,6 +18,11 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     margin: 0;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    position: relative;
 }
 
 .container:hover {
@@ -54,16 +59,23 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
-.back-link {
+#returnButton {
     position: absolute;
+    top: 1rem;
     left: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
     color: var(--text-secondary);
     transition: color 0.2s;
+    padding: 0;
   }
   
-  .back-link:hover {
+  #returnButton:hover {
     color: var(--primary-color);
   }
+  
 
 #progressBarContainer {
     width: 100%;
@@ -112,7 +124,7 @@ input[type="text"] {
     margin-top: 20px;
 }
 
-button {
+#gen1 {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -128,13 +140,13 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
+#gen1:hover {
     background-color: var(--primary-hover);
     transform: translateY(-1px);
     box-shadow: 0 4px 6px var(--shadow-color);
 }
 
-button a {
+#gen1 a {
     color: white;
     text-decoration: none;
 }

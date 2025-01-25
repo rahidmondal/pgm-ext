@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>SecOne PGM - Password Generator</title>
     <meta name="description"
-        content="Secure-PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
+        content="SecOne PGM is a simple password manager that helps you to generate strong passwords, check the strength of your passwords, and store your passwords securely.">
 
 
     <link rel="stylesheet" href="../style/index.css">
@@ -17,12 +17,8 @@
 <body>
     <div class="container">
         <header>
-            <a href="../index.html" class="back-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
-                </svg>
-            </a>
-            <h1>Secure PGM </h1>
+            <button id="returnButton">&larr;</button>
+            <h1>SecOne PGM </h1>
         </header>
 
         <main class="generator-container">
@@ -37,12 +33,6 @@
             </div>
 
             <div class="options-container">
-                <div class="option-group">
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="allCheck">
-                        <span>All Characters</span>
-                    </label>
-                </div>
 
                 <div class="option-group">
                     <label class="checkbox-container">
@@ -69,6 +59,13 @@
                     <label class="checkbox-container">
                         <input type="checkbox" id="symbols">
                         <span>Symbols (!@#$%^&*)</span>
+                    </label>
+                </div>
+
+                <div class="option-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="allCheck">
+                        <span>All Characters</span>
                     </label>
                 </div>
 
