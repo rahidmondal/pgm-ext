@@ -1,12 +1,11 @@
 # SecOne PGM Extension
 
-*SecOne PGM Extension* is a simple, user-friendly Chrome extension that serves as a basic password manager. It helps users generate strong passwords, check the strength of existing passwords, and securely store their passwords in a vault. The extension features an intuitive interface with easy navigation between its core functionalities.
+*SecOne PGM Extension* is a simple, user-friendly Chrome extension that serves as a basic password manager. It helps users generate strong passwords, check the strength of existing passwords.
 
 ## Features
 
 - Generate Passwords: Create strong and secure passwords using customizable options.
 - Check Strength: Analyze the strength of your passwords to ensure they are secure.
-- Password Vault: Store and retrieve passwords securely for convenient access.
 
 ## Installation
 1. Download and extract the source code or clone the repository to your local machine.
@@ -19,7 +18,6 @@
 1. Open the extension through the Chrome toolbar or side panel.
 2. Use the Generate Password feature to create secure passwords instantly.
 3. Navigate to the Check Strength section to verify the strength of your passwords.
-4. Access the Password Vault to securely save and retrieve your passwords.
 
 ## Permissions
 - sidePanel: Enables the extension to integrate seamlessly into the Chrome side panel.
