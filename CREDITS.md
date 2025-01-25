@@ -47,3 +47,8 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+
+### Flaticon
+1. [Vault icons created by Canticons - Flaticon](https://www.flaticon.com/free-icons/vault)
+2. [Password icons created by Dewi Sari - Flaticon](https://www.flaticon.com/free-icons/password)
+3. [Password icons created by Iconic Artisan - Flaticon](https://www.flaticon.com/free-icons/password)
