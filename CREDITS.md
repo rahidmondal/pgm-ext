@@ -52,3 +52,7 @@
 1. [Vault icons created by Canticons - Flaticon](https://www.flaticon.com/free-icons/vault)
 2. [Password icons created by Dewi Sari - Flaticon](https://www.flaticon.com/free-icons/password)
 3. [Password icons created by Iconic Artisan - Flaticon](https://www.flaticon.com/free-icons/password)
+
+### Iconpacks
+1. [Eye Icon](https://www.iconpacks.net/free-icon/eye-12109.html)
+2. [Eye Close Icon](https://www.iconpacks.net/free-icon/hidden-12115.html)
