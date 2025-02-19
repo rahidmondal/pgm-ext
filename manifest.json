@@ -2,7 +2,7 @@
     "manifest_version" : 3,
     "name" : "PGM Extension",
     "description" : "Password Generator and Strength Checker",
-    "version" : "0.1.0",
+    "version" : "0.2.1",
     "action": {
         "default_icon": {
             "16": "src/resources/logo16.png",
@@ -13,7 +13,7 @@
     "side_panel" : {
         "default_path" : "src/index.html"
     },
-    "permissions" : ["sidePanel"],
+    "permissions" : ["sidePanel", "storage"], 
     "icons": {
         "16": "src/resources/logo16.png",
         "48": "src/resources/logo48.png",
