@@ -27,7 +27,11 @@
                     <!-- Passwords will be added here dynamically -->
                 </div>
             </main>
+        
         </div>
+        <footer class="app-footer">
+            <p class="version">v0.2.1</p>
+        </footer>
     </div>
 
     <div id="passwordModal" class="modal">
@@ -65,14 +69,23 @@
             <div class="detail-group">
                 <label>Site Name:</label>
                 <span id="detailTitle"></span>
+                <button class="copy-button" data-copy-target="detailTitle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
             </div>
             <div class="detail-group">
                 <label>Username:</label>
                 <span id="detailUsername"></span>
+                <button class="copy-button" data-copy-target="detailUsername"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
             </div>
             <div class="detail-group">
                 <label>Password:</label>
                 <span id="detailPassword"></span>
+                <button class="copy-button" data-copy-target="detailPassword"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
             </div>
             <div class="form-actions">
                 <button type="button" class="cancel-button" id="closeDetail">Close</button>

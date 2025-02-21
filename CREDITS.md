@@ -56,3 +56,4 @@
 ### Iconpacks
 1. [Eye Icon](https://www.iconpacks.net/free-icon/eye-12109.html)
 2. [Eye Close Icon](https://www.iconpacks.net/free-icon/hidden-12115.html)
+3. [Details Icon](https://www.iconpacks.net/free-icon/information-348.html)

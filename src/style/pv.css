@@ -81,6 +81,7 @@ footer {
   flex-direction: column;
   gap: 1.5rem;
   position: relative;
+  overflow: hidden;
 }
 
 .add-password {
@@ -126,6 +127,7 @@ footer {
   word-wrap: break-word;
   overflow: hidden;
   max-width: 100%;
+  position: relative;
 }
 
 @keyframes slideIn {
@@ -141,7 +143,7 @@ footer {
 
 .password-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px var (--shadow-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .password-header {
@@ -158,6 +160,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: calc(100% - 40px);
 }
 
 .password-actions {
@@ -196,6 +199,16 @@ footer {
 .detail-label {
   color: var(--text-primary);
   font-weight: 500;
+}
+
+.detail-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
 }
 
 /* Modal Styles */
@@ -307,5 +320,49 @@ footer {
 }
 
 .password-field .toggle-password:hover {
+  color: var (--primary-color);
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.copy-button:hover {
   color: var(--primary-color);
+}
+
+.notification {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.notification.success {
+  border-left: 4px solid var(--success-color);
+}
+
+.notification.error {
+  border-left: 4px solid var(--error-color);
+}
+
+.hidden-password {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.1em;
+}
+
+.notification.show {
+  display: block; /* Show notification */
 }
