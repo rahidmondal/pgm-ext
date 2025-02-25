@@ -123,5 +123,5 @@ The last commit in a given issue should be a `chore` commit that bumps the versi
 Example:
 
 ```
-chore(release): bump version to v0.4.1 from v0.4.1
+chore(release): bump version to v0.4.2 from v0.4.1 | The Issue was related to a bug-fix 
 ```
