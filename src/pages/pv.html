@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/pv.css">
     <script src="../scripts/pv.js" async></script>
-
 </head>
 
 <body>
@@ -20,18 +19,78 @@
             <button id="returnButton">&larr;</button>
             <h1>SecOne PGM</h1>
             <h2>Password Vault</h2>
-            <main>
-                <h1 style="background-color: azure;">Under Development</h1>
-                <p style="display: flex; justify-content: center; ">This page is currently under construction. Please
-                    check back later.</p>
+            <main class="vault-container">
+                <div class="add-password">
+                    <button id="addPassword" class="add-button"> Add Password </button>
+                </div>
+                <div id="passwordList" class="password-list">
+                    <!-- Passwords will be added here dynamically -->
+                </div>
             </main>
+        
         </div>
-        <footer class="copyright">
-            <p>v0.1.0</p>
+        <footer class="app-footer">
+            <p class="version">v0.2.3</p>
         </footer>
     </div>
 
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Password</h2>
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="title">Site Name</label>
+                    <input type="url" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group password-input-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" required>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <img src="../resources/eyeicon.svg" alt="Eye Icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </button>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancelAdd" class="cancel-button">Cancel</button>
+                    <button type="submit" class="save-button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <div id="passwordDetailModal" class="modal">
+        <div class="modal-content">
+            <h2>Password Details</h2>
+            <div class="detail-group">
+                <label>Site Name:</label>
+                <span id="detailTitle"></span>
+                <button class="copy-button" data-copy-target="detailTitle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
+            </div>
+            <div class="detail-group">
+                <label>Username:</label>
+                <span id="detailUsername"></span>
+                <button class="copy-button" data-copy-target="detailUsername"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
+            </div>
+            <div class="detail-group">
+                <label>Password:</label>
+                <span id="detailPassword"></span>
+                <button class="copy-button" data-copy-target="detailPassword"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                </svg></button>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="cancel-button" id="closeDetail">Close</button>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
